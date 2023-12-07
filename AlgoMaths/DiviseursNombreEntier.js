@@ -6,7 +6,7 @@ function dividers(num) {
     for (let d = 1; d <= num; d++) {
       // Vérifie si le nombre (num) est divisible par d
       if (num % d === 0) {
-        dividersList.push(d); // Si oui, ajoute d à la liste des diviseurs
+        dividersList.push(d); // Ajoute d à la liste des diviseurs
       }
     }
     return dividersList; 
@@ -16,12 +16,13 @@ function dividers(num) {
   //-----------------------------------------------------------------------
  //------------------------------------------------------------------------
   
-  function dividers(num) {
+function dividers2(num) {
   const dividersList = []; 
 
-  // Parcours de tous les nombres de 1 à num inclusivement
+  // Array.from(Array(num + 1)): Convertit le tableau précédent en un nouveau tableau
+  // la méthode keys() pour remplacer chaque élément undefined par son index
   for (let d of Array.from(Array(num + 1).keys())) {
-    // Vérifie si le nombre (num) est divisible par d
+
     if (num % d === 0) {
       dividersList.push(d);
     }
@@ -29,13 +30,13 @@ function dividers(num) {
   return dividersList;
 }
 
-console.log(dividers(12));
+console.log(dividers2(12));
   
 //------------------------------------------------------------------------
 //------------------------------------------------------------------------
 
 
-function dividers(num) {
+function dividers3(num) {
     
     // Vérifie si num est un nombre entier positif
     if (Number.isInteger(num) && num > 0) {
@@ -53,8 +54,8 @@ function dividers(num) {
     }
   }
   
-
-  console.log(dividers(12)); 
-  console.log(dividers(7)); 
-  console.log(dividers(-8)); 
+ 
+  console.log(dividers3(12)); 
+  console.log(dividers3(7)); 
+  console.log(dividers3(-8)); 
   
