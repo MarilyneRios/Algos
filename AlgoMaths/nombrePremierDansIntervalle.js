@@ -23,6 +23,8 @@ function PrimaryNumber (a,b){
 }
 
 
-PrimaryNumber(7,14); // 7 % 2 = 1; 7 % 3 = 1; 7 % 4= 3; 7 % 5 = 2; 7 % 6 = 1; => C'est un nombre premier
-PrimaryNumber(4,20); // 4 % 2 = 0; => Ce n'est pas un nombre premier
+PrimaryNumber(7,14); 
+PrimaryNumber(4,20); 
 PrimaryNumber(1,30);
+//------------------------------------------------------------------------
+
