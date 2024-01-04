@@ -14,3 +14,5 @@ console.log(sum)
 return sum;
 
 }
+
+Sol(10);
